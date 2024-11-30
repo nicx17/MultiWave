@@ -1,5 +1,3 @@
-![Reciever_circuit_image](https://github.com/user-attachments/assets/87f6f35e-f5e3-4148-b5da-70c74523ed1f)
-![Reciever_circuit_image](https://github.com/user-attachments/assets/1aab52be-0259-442b-bb7f-c63865e3175f)
 # MultiWave
 Multi-Cable Tester
 
@@ -94,13 +92,13 @@ Other ports are tested in a similar way. The RJ11 port and BNC port consist of o
 
 ## Components
 
-#### Heres a list of all the components used in this project.
+#### Here is a list of all the components used in this project.
 
 1.	Arduino Mega 2560(Copy)
 2.	Mega2560 Pro ATMEGA2560(Copy)
 3.	Prototype Shield V3.0 For Arduino Mega
 4.	Dotted PCB 24*10 (2) 
-5.	Multi core wire
+5.	Multi-core wire
 6.	220Ω Resistors (16)
 7.	5mm Green DIP LED (8)
 8.	5mm RED DIP LED (8)
@@ -121,4 +119,8 @@ Other ports are tested in a similar way. The RJ11 port and BNC port consist of o
 23.	18650 3.6V 2500mAh Li-ion Battery (2)
 24. PLA Generic black filament
 
+## Circuit Diagram 
+
+#### Circuit Diagram for the receiver box
+![Reciever_circuit_image](https://github.com/user-attachments/assets/87f6f35e-f5e3-4148-b5da-70c74523ed1f)
 
