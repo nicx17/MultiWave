@@ -119,10 +119,17 @@ Other ports are tested in a similar way. The RJ11 port and BNC port consist of o
 23.	18650 3.6V 2500mAh Li-ion Battery (2)
 24. PLA Generic black filament
 
-## Circuit Diagram 
+## Circuit Diagram
+### Circuit Diagram for the receiver box
 
-#### Circuit Diagram for the receiver box
 ![Reciever_circuit_image](https://github.com/user-attachments/assets/87f6f35e-f5e3-4148-b5da-70c74523ed1f)
+View in [Circkit Designer](https://app.cirkitdesigner.com/project/7d886924-d269-467c-b663-24d51e59681c)
+
+
+### Circuit Diagram for the transmitter box
+
 ![Transmitter_circuit_image](https://github.com/user-attachments/assets/252e9cfd-8a7b-4bef-9b90-e070491c98b2)
+View in [Circkit Designer](https://app.cirkitdesigner.com/project/dbc1c6d2-5d9e-4712-a71e-35fb16c95f0c)
+
 
 
