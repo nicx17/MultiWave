@@ -132,4 +132,6 @@ View in [Circkit Designer](https://app.cirkitdesigner.com/project/7d886924-d269-
 View in [Circkit Designer](https://app.cirkitdesigner.com/project/dbc1c6d2-5d9e-4712-a71e-35fb16c95f0c)
 
 
+## License
 
+[GPL v3.0](https://choosealicense.com/licenses/gpl-3.0/)
