@@ -32,9 +32,22 @@ It has 8 pull-down resistors to pull-down the voltage on any floating pins (pins
 
 Once the transmitter is turned on the LED assigned to each port is initially turned off. The port can be selected by pressing the tactile button. This will cycle through each port and NoPortSelected state (RJ45, RJ11, BNC and NoPortSelected). The LED above each port indicating which port is selected. When no port is selected led assigned to each port will be off. 
 
-When the receiver is turned on the display on the receiver box displays the selected the test mode and port. The mode can be changed by using the rotary encoder. It will cycle through the modes (Continuity, Short, wiring, Manual). The selected port can be changed by pressing the tactile button. This will cycle through the ports (RJ45 T568A, RJ45 T568B, Rj11 and BNC).
+When the receiver is turned on the display on the receiver box displays the selected the test mode and port. 
+
+```
+MODE: CONTINUITY TEST
+
+PORT: RJ45 T568B
+
+``` 
+
+The mode can be changed by using the rotary encoder. It will cycle through the modes (Continuity, Short, wiring, Manual). The selected port can be changed by pressing the tactile button. This will cycle through the ports (RJ45 T568A, RJ45 T568B, Rj11 and BNC).
 Now to activate the test for the selected port the switch on the rotary encoder has to be pressed.
 
+```
+CONTINUITY MODE SELECTED
+
+``` 
 Once this is done the ardunio in the receiver box will set the pins in the selected port to either high or low in a particular pattern which will be indicated by the 8 LED array on the top. 
 If the continuity mode was selected for RJ45 port, pin1 would be set high and the remaining pins would be set low. It would look like this **HIGH LOW LOW LOW LOW LOW LOW LOW** . It will also store this state as a string: `10000000`.
 The 8 LED array would represent this in the same way, the first led would be on and the remaining ones would be off. After approximately 600 ms the pin that was set high will change. Now it will be **LOW HIGH LOW LOW LOW LOW LOW LOW** The same will be represented by the LED array.
