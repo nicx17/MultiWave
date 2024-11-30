@@ -90,4 +90,33 @@ Manual mode is a bit different. When it is selected the rotary encoder can be us
 
 Other ports are tested in a similar way. The RJ11 port and BNC port consist of only 2 conductors so only the middle 2 characters of the string are used to represent that (`00010000` and `00001000`).
 
+## Components
+
+#### Heres a list of all the components used in this project.
+
+1.	Arduino Mega 2560(Copy)
+2.	Mega2560 Pro ATMEGA2560(Copy)
+3.	Prototype Shield V3.0 For Arduino Mega
+4.	Dotted PCB 24*10 (2) 
+5.	Multi core wire
+6.	220Ω Resistors (16)
+7.	5mm Green DIP LED (8)
+8.	5mm RED DIP LED (8)
+9.	5mm BLUE DIP LED (3)
+10.	3 x 7 cm Universal PCB Prototype Board Double-Side (2)
+11.	2 x 8 cm Universal PCB Prototype Board Single-Sided
+12.	1.3 Inch I2C OLED Display Module 4 pin- WHITE
+13.	2.4GHz NRF24L01+PA+LNA SMA Wireless Transceiver 
+14.	Tactile Push Button Switch 6x6x5 (3)
+15.	Rocker Switch-KDC-01
+16.	M274 360 Degree Rotary Encoder Brick Sensor Module
+17.	RJ11 Female Port (2)
+18.	RJ45 Connector Breakout Module (2)
+19.	BNC Female Jack (2) 
+20.	USB-C Breakout – Horizontal Module
+21.	TP4056 1A Li-Ion Battery Charging Board (2)
+22.	XL6009 DC-DC Step-Up Converter LM2577 Booster Circuit Board
+23.	18650 3.6V 2500mAh Li-ion Battery (2)
+24. PLA Generic black filament
+
 
