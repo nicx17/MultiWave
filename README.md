@@ -1,3 +1,5 @@
+![Reciever_circuit_image](https://github.com/user-attachments/assets/87f6f35e-f5e3-4148-b5da-70c74523ed1f)
+![Reciever_circuit_image](https://github.com/user-attachments/assets/1aab52be-0259-442b-bb7f-c63865e3175f)
 # MultiWave
 Multi-Cable Tester
 
