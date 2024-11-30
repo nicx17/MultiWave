@@ -71,4 +71,10 @@ This test will keep running until the user stops it or by changing the mode.
 The mode can be changed by rotating the rotary encoder. This will automatically stop the test and change the mode which can then be activated by pressing the encoder switch.
 
 The short and wiring mode also work similarly. The difference in the short mode is when the receiver arduino receives the string from the transmitter it adds all the numbers in the string `10000000` and checks if the sum is greater than one `01100000`. If the sum is greater than one that means that the cable being tested has a short.
-Wiring mode works the same way as the continuity mode.
+Wiring mode works in the same way as the continuity mode.
+
+Manual mode is a bit different. When it is selected the rotary encoder can be used to select which pin is set high. If the initial pin state is `10000000` and the user rotates the encoder clockwise by one indent then the resulting pin state will be `01000000`. All other data (pin number, wire colour, SENT, RECV) will be displayed the same way as other modes including the pin stat representation by the 8 LED array.
+
+Other ports are tested in a similar way. The RJ11 port and BNC port consist of only 2 conductors so only the middle 2 characters of the string are used to represent that (`00010000` and `00001000`).
+
+
