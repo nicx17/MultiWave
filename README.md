@@ -123,4 +123,6 @@ Other ports are tested in a similar way. The RJ11 port and BNC port consist of o
 
 #### Circuit Diagram for the receiver box
 ![Reciever_circuit_image](https://github.com/user-attachments/assets/87f6f35e-f5e3-4148-b5da-70c74523ed1f)
+![Transmitter_circuit_image](https://github.com/user-attachments/assets/252e9cfd-8a7b-4bef-9b90-e070491c98b2)
+
 
