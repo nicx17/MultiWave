@@ -1,6 +1,5 @@
 #include <Adafruit_SH1106.h>  // Library for OLED display
 #include <SPI.h>              // SPI library for Arduino Ethernet
-#include <Ethernet.h>         // Ethernet library
 #include <Arduino.h>
 #include <nRF24L01.h>      // Library for nRF24L01 module
 #include <RF24.h>          // RF24 library for nRF24L01 module
