@@ -28,6 +28,47 @@ It has the same 8 LED array as the receiver to indicate the pin/conductor being 
 
 It has 8 pull-down resistors to pull-down the voltage on any floating pins (pins/conductor in the port that aren’t connected to any voltage). It has the same rocker switch to turn it on.
 
+## Working
 
+Once the transmitter is turned on the LED assigned to each port is initially turned off. The port can be selected by pressing the tactile button. This will cycle through each port and NoPortSelected state (RJ45, RJ11, BNC and NoPortSelected). The LED above each port indicating which port is selected. When no port is selected led assigned to each port will be off. 
 
+When the receiver is turned on the display on the receiver box displays the selected the test mode and port. The mode can be changed by using the rotary encoder. It will cycle through the modes (Continuity, Short, wiring, Manual). The selected port can be changed by pressing the tactile button. This will cycle through the ports (RJ45 T568A, RJ45 T568B, Rj11 and BNC).
+Now to activate the test for the selected port the switch on the rotary encoder has to be pressed.
 
+Once this is done the ardunio in the receiver box will set the pins in the selected port to either high or low in a particular pattern which will be indicated by the 8 LED array on the top. 
+If the continuity mode was selected for RJ45 port, pin1 would be set high and the remaining pins would be set low. It would look like this **HIGH LOW LOW LOW LOW LOW LOW LOW** . It will also store this state as a string: `10000000`.
+The 8 LED array would represent this in the same way, the first led would be on and the remaining ones would be off. After approximately 600 ms the pin that was set high will change. Now it will be **LOW HIGH LOW LOW LOW LOW LOW LOW** The same will be represented by the LED array.
+This will keep iterating and will and cycle the pin that is set high.
+
+At the transmitter if the RJ45 port is selected then the arduino inside it is constantly checking the states of all the pins connected to the port. Once every 200ms.
+
+The cable being tested has one end connected to the receiver and the other end to the transmitter. When the first pin is set high and all others low the transmitter will detect this and create a string representing the pin states. So, if the pin states are **HIGH LOW LOW LOW LOW LOW LOW LOW** 
+
+The string would be: `10000000` and after 600ms when the receiver changes the pin states it will be `01000000` The pin states at the transmitter will be represented by the 8 LED array on it. Provided the cable is not broken and is functional.
+
+After the Transmitter creates the string `10000000` representing the pin states it will transmit this to the receiver arduino through the nRF24l01+PA+LNA module. When the receiver receives this string, it will compare it with the string it had stored on its pin states. 
+If the both the strings match then the value of a variable is incremented by one. The string stored and received by the arduino is also displayed on the screen one below the other along with the state of the current pin being tested and the colour of the conductor, as shown below
+```
+
+SENT: 10000000
+RECV: 10000000
+PIN 1 CONNECTED
+WIRCLR: White Orange
+``` 
+
+After 600 ms it changes the order of the high pin and then compares and increments. When all the pins have been tested and if the value of the variable is <=8 then the arduino will display the result of the test on the screen. 
+
+It would look like this 
+```
+CONTINUITY TEST PASSED
+SENT: 00000001
+RECV: 00000001
+PIN 8 CONNECTED
+WIRCLR: Brown
+``` 
+This test will keep running until the user stops it or by changing the mode. 
+
+The mode can be changed by rotating the rotary encoder. This will automatically stop the test and change the mode which can then be activated by pressing the encoder switch.
+
+The short and wiring mode also work similarly. The difference in the short mode is when the receiver arduino receives the string from the transmitter it adds all the numbers in the string `10000000` and checks if the sum is greater than one `01100000`. If the sum is greater than one that means that the cable being tested has a short.
+Wiring mode works the same way as the continuity mode.
