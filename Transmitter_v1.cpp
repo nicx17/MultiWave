@@ -14,8 +14,9 @@ int buttonPin = 36;
 int lastButtonState = LOW;
 
 void setup() {
+ Serial.begin(9600);
   radio.begin();
-  Serial.begin(9600);
+ 
   radio.openWritingPipe(address);
   radio.setPALevel(RF24_PA_MIN);
   radio.stopListening();

@@ -72,7 +72,9 @@ void function4();
 void (*functions[])() = { function1, function2, function3, function4 };
 
 void setup() {
-  // Button pin configuration
+
+  Serial.begin(9600);
+ // Button pin configuration
   pinMode(buttonPin, INPUT_PULLUP);
 
   // Configure LED pins as outputs
@@ -102,7 +104,6 @@ void setup() {
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
 
-  Serial.begin(9600);
 
   // Configure RJ45 pins
   for (int i = 0; i < numPins; ++i) {
