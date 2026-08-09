@@ -135,3 +135,13 @@ View in [Circkit Designer](https://app.cirkitdesigner.com/project/dbc1c6d2-5d9e-
 ## License
 
 [GPL v3.0](https://choosealicense.com/licenses/gpl-3.0/)
+
+## Contributors
+
+| Name        | GitHub Profile                                                                                  |
+| :------------| :------------------------------------------------------------------------------------------------|
+| [**Rishi**](https://github.com/Rispats) | <a href="https://github.com/Rispats"><img src="https://github.com/Rispats.png?size=30" width="30" alt="Rishi"></a> |
+| [**Krishay**](https://github.com/krish4yy) | <a href="https://github.com/krish4yy"><img src="https://github.com/krish4yy.png?size=30" width="30" alt="Krishar"></a> |
+| [**Kevin**](https://github.com/KevinAlex-08) | <a href="https://github.com/KevinAlex-08"><img src="https://github.com/KevinAlex-08.png?size=30" width="30" alt="Kevin"></a> |
+| [**Nikhil**](https://github.com/karmalinikhil) | <a href="https://github.com/karmalinikhil"><img src="https://github.com/karmalinikhil.png?size=30" width="30" alt="Nikhil"></a> |
+
